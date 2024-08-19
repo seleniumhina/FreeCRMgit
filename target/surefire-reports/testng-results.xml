@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-18T04:41:41 IST" name="Surefire suite" finished-at="2024-08-18T04:42:44 IST" duration-ms="63029">
+    <groups>
+    </groups>
+    <test started-at="2024-08-18T04:41:41 IST" name="Surefire test" finished-at="2024-08-18T04:42:44 IST" duration-ms="63029">
+      <class name="com.crm.qa.testcases.LoginpageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginpageTest@7f552bd3]" started-at="2024-08-18T04:42:36 IST" name="setup" finished-at="2024-08-18T04:42:43 IST" duration-ms="7294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:0, instance:com.crm.qa.testcases.LoginpageTest@7f552bd3]" started-at="2024-08-18T04:42:43 IST" name="loginTest" finished-at="2024-08-18T04:42:44 IST" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.crm.qa.testcases.LoginpageTest -->
+      <class name="com.crm.qa.testcases.HomepageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.HomepageTest@3eb7fc54]" started-at="2024-08-18T04:42:26 IST" name="setup" finished-at="2024-08-18T04:42:33 IST" duration-ms="6969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyContactsPageNavigation()[pri:0, instance:com.crm.qa.testcases.HomepageTest@3eb7fc54]" started-at="2024-08-18T04:42:33 IST" name="verifyContactsPageNavigation" finished-at="2024-08-18T04:42:36 IST" duration-ms="2622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactsPageNavigation -->
+      </class> <!-- com.crm.qa.testcases.HomepageTest -->
+      <class name="com.crm.qa.testcases.ContactspageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactspageTest@54c562f7]" started-at="2024-08-18T04:41:41 IST" name="setup" finished-at="2024-08-18T04:41:52 IST" duration-ms="10304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAddContactLink(java.lang.String,java.lang.String)[pri:0, instance:com.crm.qa.testcases.ContactspageTest@54c562f7]" started-at="2024-08-18T04:41:52 IST" name="verifyAddContactLink" data-provider="getCRMTestData" finished-at="2024-08-18T04:41:53 IST" duration-ms="1425" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ben]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddContactLink -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactspageTest@54c562f7]" started-at="2024-08-18T04:41:53 IST" name="setup" finished-at="2024-08-18T04:42:01 IST" duration-ms="7491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAddContactLink(java.lang.String,java.lang.String)[pri:0, instance:com.crm.qa.testcases.ContactspageTest@54c562f7]" started-at="2024-08-18T04:42:01 IST" name="verifyAddContactLink" data-provider="getCRMTestData" finished-at="2024-08-18T04:42:02 IST" duration-ms="1677" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Saya]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddContactLink -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactspageTest@54c562f7]" started-at="2024-08-18T04:42:02 IST" name="setup" finished-at="2024-08-18T04:42:15 IST" duration-ms="12507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAddContactLink(java.lang.String,java.lang.String)[pri:0, instance:com.crm.qa.testcases.ContactspageTest@54c562f7]" started-at="2024-08-18T04:42:15 IST" name="verifyAddContactLink" data-provider="getCRMTestData" finished-at="2024-08-18T04:42:16 IST" duration-ms="1572" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Marve]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddContactLink -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactspageTest@54c562f7]" started-at="2024-08-18T04:42:16 IST" name="setup" finished-at="2024-08-18T04:42:26 IST" duration-ms="9845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyContactNameTest()[pri:1, instance:com.crm.qa.testcases.ContactspageTest@54c562f7]" started-at="2024-08-18T04:42:26 IST" name="verifyContactNameTest" finished-at="2024-08-18T04:42:26 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactNameTest -->
+      </class> <!-- com.crm.qa.testcases.ContactspageTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
