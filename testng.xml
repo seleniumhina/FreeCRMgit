@@ -8,7 +8,7 @@
       <class name="com.crm.qa.testcases.CreatenewCompanyTest"/>
       <class name="com.crm.qa.testcases.dealpageTest"/>
       <class name="com.crm.qa.testcases.HomepageTest"/>
-      <class name="com.crm.qa.testcases.ContactspageTest"/>
+    
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

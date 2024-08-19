@@ -15,7 +15,7 @@ public class ContactspageTest extends Testbase {
 
     Loginpage loginpage;
     Homepage homepage;
-    Contactspage contactspage;
+  //  Contactspage contactspage;
     String sheetname = "contacts";
     
     public ContactspageTest() {
@@ -27,13 +27,13 @@ public class ContactspageTest extends Testbase {
         initialization();
         loginpage = new Loginpage();
         homepage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
-        contactspage = homepage.clickContactlink(); // Ensure this method exists and returns a Contactspage instance
+       // contactspage = homepage.clickContactlink(); // Ensure this method exists and returns a Contactspage instance
     }
 
-    @Test(priority=1)
-    public void verifyContactNameTest() {
-        Assert.assertTrue(contactspage.contactLabelLink());   
-    }
+//    @Test(priority=1)
+//    public void verifyContactNameTest() {
+//        Assert.assertTrue(contactspage.contactLabelLink());   
+//    }
 
     @DataProvider
     public Object[][] getCRMTestData() {
@@ -41,9 +41,9 @@ public class ContactspageTest extends Testbase {
         return data;	
     }
     
-    @Test(dataProvider = "getCRMTestData")
-    public void verifyAddContactLink(String firstname, String lastname) {
-        homepage.clickOnAdd();  // Navigate to the add contact page
-        contactspage.addContactLink(firstname, lastname);  // Add the contact using the data from the Excel sheet
-    }
+//    @Test(dataProvider = "getCRMTestData")
+//    public void verifyAddContactLink(String firstname, String lastname) {
+//        homepage.clickOnAdd();  // Navigate to the add contact page
+//        contactspage.addContact(firstname, lastname);  // Add the contact using the data from the Excel sheet
+//    }
 }

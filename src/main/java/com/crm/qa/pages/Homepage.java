@@ -32,12 +32,12 @@ public Homepage() {
 		PageFactory.initElements(driver, this);
 	}
 	
-public Contactspage clickContactlink()
-{
-	contacts.click(); 
-	return new Contactspage();
-	
-}
+//public Contactspage clickContactlink()
+//{
+//	contacts.click(); 
+//	return new Contactspage();
+//	
+//}
 
 public void clickOnAdd()
 
