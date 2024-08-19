@@ -15,10 +15,10 @@ public class Contactspage extends Testbase {
     WebElement createbutton;
 
     @FindBy(name = "first_name")
-    WebElement firstname;
+    WebElement firstnamefield;
 
     @FindBy(name = "last_name")
-    WebElement lastname;
+    WebElement lastnamefield;
 
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement savebtn;
@@ -35,8 +35,8 @@ public class Contactspage extends Testbase {
 
     // Method to add a new contact
     public void addContactLink(String firstname, String lastname) {
-        this.firstname.sendKeys(firstname);  // Enter the first name
-        this.lastname.sendKeys(lastname);    // Enter the last name
+        this.firstnamefield.sendKeys(firstname);  // Enter the first name
+        this.lastnamefield.sendKeys(lastname);    // Enter the last name
         savebtn.click();                     // Click the save button to add the contact
     }
 }

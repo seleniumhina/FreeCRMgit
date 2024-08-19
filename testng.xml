@@ -3,7 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.crm.qa.testcases.companiespageTest"/>
       <class name="com.crm.qa.testcases.LoginpageTest"/>
+      <class name="com.crm.qa.testcases.CreatenewCompanyTest"/>
       <class name="com.crm.qa.testcases.dealpageTest"/>
       <class name="com.crm.qa.testcases.HomepageTest"/>
       <class name="com.crm.qa.testcases.ContactspageTest"/>
