@@ -31,21 +31,27 @@ public class Testutil extends Testbase {
             sheet = book.getSheet(sheetName);
 
             if (sheet == null) {
-                return new Object[0][0]; // return empty array if sheet not found
+                return new Object[0][0]; // Return empty array if sheet not found
             }
 
-            Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
-            
-            for (int i = 0; i < sheet.getLastRowNum(); i++) {
-                for (int k = 0; k < sheet.getRow(i + 1).getLastCellNum(); k++) {
-                    data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
+            int rows = sheet.getLastRowNum();
+            int cols = sheet.getRow(0).getLastCellNum();
+            Object[][] data = new Object[rows][cols];
+
+            for (int i = 0; i < rows; i++) {
+                for (int k = 0; k < cols; k++) {
+                    if (sheet.getRow(i + 1).getCell(k) != null) {
+                        data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
+                    } else {
+                        data[i][k] = ""; // Handle empty cells
+                    }
                     System.out.println(data[i][k]);
                 }
             }
             return data;
         } catch (IOException e) {
             e.printStackTrace();
-            return new Object[0][0]; // return empty array if error occurs
+            return new Object[0][0]; // Return empty array if error occurs
         } finally {
             try {
                 if (file != null) {
@@ -63,7 +69,7 @@ public class Testutil extends Testbase {
         try {
             FileUtils.copyFile(srcFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace(); // Handle file copy exceptions
         }
     }
 }
